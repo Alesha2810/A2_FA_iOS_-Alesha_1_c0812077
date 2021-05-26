@@ -307,24 +307,26 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
         {
             let test = try managedContext.fetch(fetchRequest)
             
-            for i in 0...test.count - 1 {
-                let objectToDelete = test[i] as! NSManagedObject
-                managedContext.delete(objectToDelete)
-            }
-            do{
-                try managedContext.save()
-                appDelegate.window?.makeToast("Provider Deleted!", duration: 3.0, position: .bottom)
-                tblProduct.reloadData()
-                
-                if arrProduts.count > 0 {
-                    vAlert.isHidden = true
-                }else{
-                    vAlert.isHidden = false
+            if test.count > 0 {
+                for i in 0...test.count - 1 {
+                    let objectToDelete = test[i] as! NSManagedObject
+                    managedContext.delete(objectToDelete)
                 }
-            }
-            catch
-            {
-                print(error)
+                do{
+                    try managedContext.save()
+                    appDelegate.window?.makeToast("Provider Deleted!", duration: 3.0, position: .bottom)
+                    tblProduct.reloadData()
+                    
+                    if arrProduts.count > 0 {
+                        vAlert.isHidden = true
+                    }else{
+                        vAlert.isHidden = false
+                    }
+                }
+                catch
+                {
+                    print(error)
+                }
             }
         }
         catch

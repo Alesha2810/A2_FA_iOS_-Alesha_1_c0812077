@@ -3,23 +3,56 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160E72E4265E3A9F0032F169 /* LeftViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E72DE265E3A9F0032F169 /* LeftViewCell.swift */; };
+		160E72E5265E3A9F0032F169 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E72DF265E3A9F0032F169 /* ProductCell.swift */; };
+		160E72E6265E3A9F0032F169 /* LeftViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160E72E0265E3A9F0032F169 /* LeftViewCell.xib */; };
+		160E72E7265E3A9F0032F169 /* ProvidersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160E72E1265E3A9F0032F169 /* ProvidersCell.xib */; };
+		160E72E8265E3A9F0032F169 /* ProvidersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E72E2265E3A9F0032F169 /* ProvidersCell.swift */; };
+		160E72E9265E3A9F0032F169 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160E72E3265E3A9F0032F169 /* ProductCell.xib */; };
+		160E72F2265E3AC20032F169 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E72EA265E3AC10032F169 /* ProductListViewController.swift */; };
+		160E72F3265E3AC20032F169 /* ProProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E72EB265E3AC10032F169 /* ProProductsViewController.swift */; };
+		160E72F4265E3AC20032F169 /* AddProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160E72EC265E3AC10032F169 /* AddProductViewController.xib */; };
+		160E72F5265E3AC20032F169 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E72ED265E3AC10032F169 /* SideMenuViewController.swift */; };
+		160E72F6265E3AC20032F169 /* ProProductsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160E72EE265E3AC10032F169 /* ProProductsViewController.xib */; };
+		160E72F7265E3AC20032F169 /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160E72EF265E3AC10032F169 /* SideMenuViewController.xib */; };
+		160E72F8265E3AC20032F169 /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E72F0265E3AC20032F169 /* AddProductViewController.swift */; };
+		160E72F9265E3AC20032F169 /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160E72F1265E3AC20032F169 /* ProductListViewController.xib */; };
+		160E72FF265E3C5F0032F169 /* ExtensionNSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E72FB265E3C5F0032F169 /* ExtensionNSObject.swift */; };
+		160E7300265E3C5F0032F169 /* JASidePanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E72FC265E3C5F0032F169 /* JASidePanelController.swift */; };
+		160E7301265E3C5F0032F169 /* UIViewController+JASidePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E72FD265E3C5F0032F169 /* UIViewController+JASidePanel.swift */; };
+		160E7302265E3C5F0032F169 /* AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E72FE265E3C5F0032F169 /* AutoLayout.swift */; };
 		1686B688265B9C27007EF1AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1686B687265B9C27007EF1AB /* AppDelegate.swift */; };
 		1686B68C265B9C27007EF1AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1686B68B265B9C27007EF1AB /* ViewController.swift */; };
 		1686B68F265B9C27007EF1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1686B68D265B9C27007EF1AB /* Main.storyboard */; };
 		1686B692265B9C27007EF1AB /* A2_FA_iOS__Alesha_c0812077.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1686B690265B9C27007EF1AB /* A2_FA_iOS__Alesha_c0812077.xcdatamodeld */; };
 		1686B694265B9C2A007EF1AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1686B693265B9C2A007EF1AB /* Assets.xcassets */; };
 		1686B697265B9C2A007EF1AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1686B695265B9C2A007EF1AB /* LaunchScreen.storyboard */; };
-		1686B6A2265B9CED007EF1AB /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1686B6A0265B9CED007EF1AB /* ProductCell.swift */; };
-		1686B6A3265B9CED007EF1AB /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1686B6A1265B9CED007EF1AB /* ProductCell.xib */; };
-		1686B6A6265B9CF2007EF1AB /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1686B6A4265B9CF2007EF1AB /* ProductListViewController.swift */; };
-		1686B6A7265B9CF2007EF1AB /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1686B6A5265B9CF2007EF1AB /* ProductListViewController.xib */; };
+		D9EDCB6EB2D1A35809C7134D /* Pods_A2_FA_iOS__Alesha_c0812077.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DAA137D2C50E13E765A00D /* Pods_A2_FA_iOS__Alesha_c0812077.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		160E72DE265E3A9F0032F169 /* LeftViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewCell.swift; sourceTree = "<group>"; };
+		160E72DF265E3A9F0032F169 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		160E72E0265E3A9F0032F169 /* LeftViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewCell.xib; sourceTree = "<group>"; };
+		160E72E1265E3A9F0032F169 /* ProvidersCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProvidersCell.xib; sourceTree = "<group>"; };
+		160E72E2265E3A9F0032F169 /* ProvidersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvidersCell.swift; sourceTree = "<group>"; };
+		160E72E3265E3A9F0032F169 /* ProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		160E72EA265E3AC10032F169 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		160E72EB265E3AC10032F169 /* ProProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProProductsViewController.swift; sourceTree = "<group>"; };
+		160E72EC265E3AC10032F169 /* AddProductViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddProductViewController.xib; sourceTree = "<group>"; };
+		160E72ED265E3AC10032F169 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		160E72EE265E3AC10032F169 /* ProProductsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProProductsViewController.xib; sourceTree = "<group>"; };
+		160E72EF265E3AC10032F169 /* SideMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
+		160E72F0265E3AC20032F169 /* AddProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
+		160E72F1265E3AC20032F169 /* ProductListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
+		160E72FB265E3C5F0032F169 /* ExtensionNSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionNSObject.swift; sourceTree = "<group>"; };
+		160E72FC265E3C5F0032F169 /* JASidePanelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JASidePanelController.swift; sourceTree = "<group>"; };
+		160E72FD265E3C5F0032F169 /* UIViewController+JASidePanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+JASidePanel.swift"; sourceTree = "<group>"; };
+		160E72FE265E3C5F0032F169 /* AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayout.swift; sourceTree = "<group>"; };
 		1686B684265B9C27007EF1AB /* A2_FA_iOS_ Alesha_c0812077.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A2_FA_iOS_ Alesha_c0812077.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1686B687265B9C27007EF1AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1686B68B265B9C27007EF1AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,10 +61,9 @@
 		1686B693265B9C2A007EF1AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1686B696265B9C2A007EF1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1686B698265B9C2A007EF1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1686B6A0265B9CED007EF1AB /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
-		1686B6A1265B9CED007EF1AB /* ProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
-		1686B6A4265B9CF2007EF1AB /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
-		1686B6A5265B9CF2007EF1AB /* ProductListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
+		5F71ECCF2EC2E4253DDFD401 /* Pods-A2_FA_iOS_ Alesha_c0812077.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A2_FA_iOS_ Alesha_c0812077.debug.xcconfig"; path = "Target Support Files/Pods-A2_FA_iOS_ Alesha_c0812077/Pods-A2_FA_iOS_ Alesha_c0812077.debug.xcconfig"; sourceTree = "<group>"; };
+		C5DAA137D2C50E13E765A00D /* Pods_A2_FA_iOS__Alesha_c0812077.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A2_FA_iOS__Alesha_c0812077.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E947548AF55186B23C4A8166 /* Pods-A2_FA_iOS_ Alesha_c0812077.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A2_FA_iOS_ Alesha_c0812077.release.xcconfig"; path = "Target Support Files/Pods-A2_FA_iOS_ Alesha_c0812077/Pods-A2_FA_iOS_ Alesha_c0812077.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +71,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9EDCB6EB2D1A35809C7134D /* Pods_A2_FA_iOS__Alesha_c0812077.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160E72FA265E3C590032F169 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				160E72FB265E3C5F0032F169 /* ExtensionNSObject.swift */,
+				160E72FE265E3C5F0032F169 /* AutoLayout.swift */,
+				160E72FC265E3C5F0032F169 /* JASidePanelController.swift */,
+				160E72FD265E3C5F0032F169 /* UIViewController+JASidePanel.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		1686B67B265B9C27007EF1AB = {
 			isa = PBXGroup;
 			children = (
 				1686B686265B9C27007EF1AB /* A2_FA_iOS_ Alesha_c0812077 */,
 				1686B685265B9C27007EF1AB /* Products */,
+				46DA028C476326F189077D67 /* Pods */,
+				632C59321503D2943625C601 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +110,7 @@
 		1686B686265B9C27007EF1AB /* A2_FA_iOS_ Alesha_c0812077 */ = {
 			isa = PBXGroup;
 			children = (
+				160E72FA265E3C590032F169 /* Library */,
 				1686B69F265B9CE2007EF1AB /* Custom Cell */,
 				1686B69E265B9CDC007EF1AB /* Class */,
 				1686B687265B9C27007EF1AB /* AppDelegate.swift */,
@@ -80,8 +127,14 @@
 		1686B69E265B9CDC007EF1AB /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				1686B6A4265B9CF2007EF1AB /* ProductListViewController.swift */,
-				1686B6A5265B9CF2007EF1AB /* ProductListViewController.xib */,
+				160E72ED265E3AC10032F169 /* SideMenuViewController.swift */,
+				160E72EF265E3AC10032F169 /* SideMenuViewController.xib */,
+				160E72EA265E3AC10032F169 /* ProductListViewController.swift */,
+				160E72F1265E3AC20032F169 /* ProductListViewController.xib */,
+				160E72F0265E3AC20032F169 /* AddProductViewController.swift */,
+				160E72EC265E3AC10032F169 /* AddProductViewController.xib */,
+				160E72EB265E3AC10032F169 /* ProProductsViewController.swift */,
+				160E72EE265E3AC10032F169 /* ProProductsViewController.xib */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -89,10 +142,31 @@
 		1686B69F265B9CE2007EF1AB /* Custom Cell */ = {
 			isa = PBXGroup;
 			children = (
-				1686B6A0265B9CED007EF1AB /* ProductCell.swift */,
-				1686B6A1265B9CED007EF1AB /* ProductCell.xib */,
+				160E72DF265E3A9F0032F169 /* ProductCell.swift */,
+				160E72E3265E3A9F0032F169 /* ProductCell.xib */,
+				160E72DE265E3A9F0032F169 /* LeftViewCell.swift */,
+				160E72E0265E3A9F0032F169 /* LeftViewCell.xib */,
+				160E72E2265E3A9F0032F169 /* ProvidersCell.swift */,
+				160E72E1265E3A9F0032F169 /* ProvidersCell.xib */,
 			);
 			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		46DA028C476326F189077D67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F71ECCF2EC2E4253DDFD401 /* Pods-A2_FA_iOS_ Alesha_c0812077.debug.xcconfig */,
+				E947548AF55186B23C4A8166 /* Pods-A2_FA_iOS_ Alesha_c0812077.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		632C59321503D2943625C601 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5DAA137D2C50E13E765A00D /* Pods_A2_FA_iOS__Alesha_c0812077.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1686B69B265B9C2A007EF1AB /* Build configuration list for PBXNativeTarget "A2_FA_iOS_ Alesha_c0812077" */;
 			buildPhases = (
+				8157B4672E5CC97FFE2C2219 /* [CP] Check Pods Manifest.lock */,
 				1686B680265B9C27007EF1AB /* Sources */,
 				1686B681265B9C27007EF1AB /* Frameworks */,
 				1686B682265B9C27007EF1AB /* Resources */,
+				C2179A7C6572FB8ABD29929F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,14 +230,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				1686B697265B9C2A007EF1AB /* LaunchScreen.storyboard in Resources */,
-				1686B6A3265B9CED007EF1AB /* ProductCell.xib in Resources */,
 				1686B694265B9C2A007EF1AB /* Assets.xcassets in Resources */,
-				1686B6A7265B9CF2007EF1AB /* ProductListViewController.xib in Resources */,
+				160E72F6265E3AC20032F169 /* ProProductsViewController.xib in Resources */,
+				160E72E9265E3A9F0032F169 /* ProductCell.xib in Resources */,
 				1686B68F265B9C27007EF1AB /* Main.storyboard in Resources */,
+				160E72E7265E3A9F0032F169 /* ProvidersCell.xib in Resources */,
+				160E72E6265E3A9F0032F169 /* LeftViewCell.xib in Resources */,
+				160E72F4265E3AC20032F169 /* AddProductViewController.xib in Resources */,
+				160E72F9265E3AC20032F169 /* ProductListViewController.xib in Resources */,
+				160E72F7265E3AC20032F169 /* SideMenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8157B4672E5CC97FFE2C2219 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-A2_FA_iOS_ Alesha_c0812077-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2179A7C6572FB8ABD29929F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-A2_FA_iOS_ Alesha_c0812077/Pods-A2_FA_iOS_ Alesha_c0812077-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-A2_FA_iOS_ Alesha_c0812077/Pods-A2_FA_iOS_ Alesha_c0812077-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-A2_FA_iOS_ Alesha_c0812077/Pods-A2_FA_iOS_ Alesha_c0812077-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1686B680265B9C27007EF1AB /* Sources */ = {
@@ -169,10 +292,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				1686B68C265B9C27007EF1AB /* ViewController.swift in Sources */,
-				1686B6A2265B9CED007EF1AB /* ProductCell.swift in Sources */,
-				1686B6A6265B9CF2007EF1AB /* ProductListViewController.swift in Sources */,
 				1686B692265B9C27007EF1AB /* A2_FA_iOS__Alesha_c0812077.xcdatamodeld in Sources */,
+				160E72F8265E3AC20032F169 /* AddProductViewController.swift in Sources */,
+				160E72F2265E3AC20032F169 /* ProductListViewController.swift in Sources */,
+				160E72E5265E3A9F0032F169 /* ProductCell.swift in Sources */,
 				1686B688265B9C27007EF1AB /* AppDelegate.swift in Sources */,
+				160E7300265E3C5F0032F169 /* JASidePanelController.swift in Sources */,
+				160E72E4265E3A9F0032F169 /* LeftViewCell.swift in Sources */,
+				160E7302265E3C5F0032F169 /* AutoLayout.swift in Sources */,
+				160E72F3265E3AC20032F169 /* ProProductsViewController.swift in Sources */,
+				160E72F5265E3AC20032F169 /* SideMenuViewController.swift in Sources */,
+				160E72FF265E3C5F0032F169 /* ExtensionNSObject.swift in Sources */,
+				160E7301265E3C5F0032F169 /* UIViewController+JASidePanel.swift in Sources */,
+				160E72E8265E3A9F0032F169 /* ProvidersCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +446,7 @@
 		};
 		1686B69C265B9C2A007EF1AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F71ECCF2EC2E4253DDFD401 /* Pods-A2_FA_iOS_ Alesha_c0812077.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -331,6 +464,7 @@
 		};
 		1686B69D265B9C2A007EF1AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E947548AF55186B23C4A8166 /* Pods-A2_FA_iOS_ Alesha_c0812077.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -6,8 +6,16 @@
         <attribute name="product_name" optional="YES" attributeType="String"/>
         <attribute name="product_price" optional="YES" attributeType="String"/>
         <attribute name="product_provider" optional="YES" attributeType="String"/>
+        <attribute name="provider_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="providers" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Provider" inverseName="products" inverseEntity="Provider"/>
+    </entity>
+    <entity name="Provider" representedClassName="Provider" syncable="YES" codeGenerationType="class">
+        <attribute name="product_provider" optional="YES" attributeType="String"/>
+        <attribute name="provider_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="providers" inverseEntity="Product"/>
     </entity>
     <elements>
-        <element name="Product" positionX="-54" positionY="-9" width="128" height="104"/>
+        <element name="Product" positionX="-54" positionY="-9" width="128" height="134"/>
+        <element name="Provider" positionX="-54" positionY="36" width="128" height="74"/>
     </elements>
 </model>

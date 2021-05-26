@@ -18,12 +18,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let myViewController = ProductListViewController()
-        let objSuperNavigation = UINavigationController(rootViewController: myViewController)
-        appDelegate.window?.rootViewController = objSuperNavigation
+        let obj = ProductListViewController()
+        let objSuperNavigation = UINavigationController(rootViewController: obj)
+        
+        // create the side controller
+        let objMenu = SideMenuViewController()
+
+        var sideController : JASidePanelController?
+        sideController = JASidePanelController()
+        sideController?.shouldDelegateAutorotateToVisiblePanel = false
+        sideController?.allowLeftSwipe = false
+        sideController?.centerPanel = objSuperNavigation
+        sideController?.leftPanel = objMenu
+        
+        appDelegate.window?.rootViewController = sideController
+        
+       // print("Database URL: - \(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!)")
         
         return true
     }
+    
 
     // MARK: - Core Data stack
 
@@ -70,6 +84,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    // MARK:- Global Function
+    
     func setShadow(_ view: UIView) {
         view.layer.masksToBounds = false
         view.layer.shadowRadius = 3.0
@@ -78,6 +94,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         view.layer.shadowOpacity = 0.5
     }
     
+    func setBottomBorder(textfield:UITextField) {
+        textfield.borderStyle = .none
+        textfield.layer.backgroundColor = UIColor.white.cgColor
+        textfield.layer.masksToBounds = false
+        textfield.layer.shadowColor = UIColor.lightGray.cgColor
+        textfield.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
+        textfield.layer.shadowOpacity = 1.0
+        textfield.layer.shadowRadius = 0.0
+    }
+    
+    func topMostController()->UIViewController? {
+        
+        var topController = window?.rootViewController
+        
+        while let presentedController = topController?.presentedViewController {
+            topController = presentedController
+        }
+        
+        return topController
+    }
+    
+    func CRGB(r red:CGFloat, g:CGFloat, b:CGFloat) -> UIColor {
+        return UIColor(red: red/255.0, green: g/255.0, blue: b/255.0, alpha: 1.0)
+    }
+
+    func CRGBA(r red:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
+        return UIColor(red: red/255.0, green: g/255.0, blue: b/255.0, alpha: a)
+    }
 
 }
 
