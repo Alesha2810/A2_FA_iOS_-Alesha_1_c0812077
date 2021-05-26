@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProProductsViewController" customModule="A2_FA_iOS__Alesha_c0812077" customModuleProvider="target">
+            <connections>
+                <outlet property="tblProduct" destination="klx-uF-j43" id="wK3-IW-M1Z"/>
+                <outlet property="vAlert" destination="Uni-Dg-GGD" id="ZKG-DZ-iQF"/>
+                <outlet property="view" destination="7QB-At-BfK" id="SiM-Tu-pWX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="7QB-At-BfK">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zS1-Fg-Bgw">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="klx-uF-j43">
+                    <rect key="frame" x="0.0" y="8" width="375" height="659"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Go7-b9-aeu"/>
+                        <outlet property="delegate" destination="-1" id="QC2-I7-hkb"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uni-Dg-GGD">
+                    <rect key="frame" x="27.5" y="300" width="320" height="67"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No record found." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHq-T5-YTo">
+                            <rect key="frame" x="15" y="8" width="287" height="51"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="0g0-ww-dXg"/>
+                        <constraint firstAttribute="height" constant="67" id="MkL-U2-M2e"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="klx-uF-j43" firstAttribute="leading" secondItem="gmG-sD-rHG" secondAttribute="leading" id="2aB-Th-CzH"/>
+                <constraint firstItem="zS1-Fg-Bgw" firstAttribute="top" secondItem="gmG-sD-rHG" secondAttribute="top" id="9mj-iB-R9G"/>
+                <constraint firstItem="klx-uF-j43" firstAttribute="top" secondItem="gmG-sD-rHG" secondAttribute="top" constant="8" id="C2s-oo-d3d"/>
+                <constraint firstItem="klx-uF-j43" firstAttribute="trailing" secondItem="gmG-sD-rHG" secondAttribute="trailing" id="C7g-nc-T9l"/>
+                <constraint firstItem="zS1-Fg-Bgw" firstAttribute="trailing" secondItem="gmG-sD-rHG" secondAttribute="trailing" id="Hj9-8y-4Wh"/>
+                <constraint firstItem="Uni-Dg-GGD" firstAttribute="centerX" secondItem="7QB-At-BfK" secondAttribute="centerX" id="Ybm-tE-0UV"/>
+                <constraint firstItem="Uni-Dg-GGD" firstAttribute="centerY" secondItem="7QB-At-BfK" secondAttribute="centerY" id="dqa-30-Ymi"/>
+                <constraint firstItem="zS1-Fg-Bgw" firstAttribute="leading" secondItem="gmG-sD-rHG" secondAttribute="leading" id="frx-Jl-Yr1"/>
+                <constraint firstItem="zS1-Fg-Bgw" firstAttribute="bottom" secondItem="gmG-sD-rHG" secondAttribute="bottom" id="olM-ga-0Po"/>
+                <constraint firstItem="klx-uF-j43" firstAttribute="bottom" secondItem="gmG-sD-rHG" secondAttribute="bottom" id="uNU-1v-6O9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="gmG-sD-rHG"/>
+            <point key="canvasLocation" x="133.59999999999999" y="148.87556221889056"/>
+        </view>
+    </objects>
+</document>

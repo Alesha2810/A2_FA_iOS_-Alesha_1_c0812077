@@ -1,22 +1,19 @@
 //
-//  ProductCell.swift
+//  ProvidersCell.swift
 //  A2_FA_iOS_ Alesha_c0812077
 //
-//  Created by Alesha on 24/05/21.
+//  Created by Alesha on 25/05/21.
 //  Copyright © 2021 XYZ. All rights reserved.
 //
 
 import UIKit
 
-class ProductCell: UITableViewCell {
-
+class ProvidersCell: UITableViewCell {
+    
     @IBOutlet var vBackground: UIView!
-    @IBOutlet var lblProductName: UILabel!
-    @IBOutlet var lblProductDesc: UILabel!
-    @IBOutlet var lblProductPrice: UILabel!
+    @IBOutlet var lblCount: UILabel!
     @IBOutlet var lblProductProvider: UILabel!
-    @IBOutlet var btnDelete: UIButton!
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -26,11 +23,12 @@ class ProductCell: UITableViewCell {
         
         appDelegate.setShadow(self)
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     
 }
+

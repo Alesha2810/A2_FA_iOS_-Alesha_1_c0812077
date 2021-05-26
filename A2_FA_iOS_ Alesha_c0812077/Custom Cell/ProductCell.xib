@@ -33,20 +33,30 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reliace Digital" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ia-CD-jew">
-                                <rect key="frame" x="15" y="42" width="250" height="15.5"/>
+                                <rect key="frame" x="15" y="42" width="179" height="15.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="13"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNU-oY-pQ6">
-                                <rect key="frame" x="15" y="61.5" width="250" height="14.5"/>
+                                <rect key="frame" x="15" y="61.5" width="179" height="14.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BID-1M-Gom">
+                                <rect key="frame" x="237" y="50.5" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="C7A-u8-t1v"/>
+                                    <constraint firstAttribute="width" constant="35" id="itQ-hY-efn"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="ic_greeting_delete"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="BID-1M-Gom" secondAttribute="bottom" constant="4.5" id="DdS-hM-4T7"/>
                             <constraint firstItem="eWZ-l1-Vyu" firstAttribute="leading" secondItem="bwH-gp-Ccz" secondAttribute="trailing" constant="8" id="DxZ-A4-YaD"/>
                             <constraint firstItem="qNU-oY-pQ6" firstAttribute="top" secondItem="6Ia-CD-jew" secondAttribute="bottom" constant="4" id="Fr8-ma-nuA"/>
                             <constraint firstAttribute="bottom" secondItem="qNU-oY-pQ6" secondAttribute="bottom" constant="14" id="Nj2-ZR-Jxj"/>
@@ -54,10 +64,11 @@
                             <constraint firstItem="6Ia-CD-jew" firstAttribute="top" secondItem="bwH-gp-Ccz" secondAttribute="bottom" constant="5" id="YlX-2k-Vjz"/>
                             <constraint firstItem="bwH-gp-Ccz" firstAttribute="leading" secondItem="qVU-EC-7U0" secondAttribute="leading" constant="15" id="dRi-qG-aKH"/>
                             <constraint firstItem="bwH-gp-Ccz" firstAttribute="top" secondItem="qVU-EC-7U0" secondAttribute="top" constant="15" id="i0Z-nW-zCu"/>
-                            <constraint firstAttribute="trailing" secondItem="qNU-oY-pQ6" secondAttribute="trailing" constant="15" id="isF-8t-1vl"/>
+                            <constraint firstAttribute="trailing" secondItem="qNU-oY-pQ6" secondAttribute="trailing" constant="86" id="isF-8t-1vl"/>
                             <constraint firstItem="qNU-oY-pQ6" firstAttribute="leading" secondItem="qVU-EC-7U0" secondAttribute="leading" constant="15" id="je0-hv-avE"/>
-                            <constraint firstAttribute="trailing" secondItem="6Ia-CD-jew" secondAttribute="trailing" constant="15" id="pOJ-JG-Y2p"/>
+                            <constraint firstAttribute="trailing" secondItem="6Ia-CD-jew" secondAttribute="trailing" constant="86" id="pOJ-JG-Y2p"/>
                             <constraint firstItem="6Ia-CD-jew" firstAttribute="leading" secondItem="qVU-EC-7U0" secondAttribute="leading" constant="15" id="pZZ-Nk-Co0"/>
+                            <constraint firstAttribute="trailing" secondItem="BID-1M-Gom" secondAttribute="trailing" constant="8" id="r1Y-mo-hb6"/>
                             <constraint firstAttribute="trailing" secondItem="eWZ-l1-Vyu" secondAttribute="trailing" constant="15" id="wS4-Ea-RFj"/>
                         </constraints>
                     </view>
@@ -72,6 +83,7 @@
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="btnDelete" destination="BID-1M-Gom" id="G5X-iy-u4j"/>
                 <outlet property="lblProductDesc" destination="qNU-oY-pQ6" id="ahz-Bg-MJ3"/>
                 <outlet property="lblProductName" destination="bwH-gp-Ccz" id="LVs-xV-dvC"/>
                 <outlet property="lblProductPrice" destination="eWZ-l1-Vyu" id="EfR-Rf-lIS"/>
@@ -81,4 +93,7 @@
             <point key="canvasLocation" x="-537.68115942028987" y="-91.071428571428569"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="ic_greeting_delete" width="18" height="18"/>
+    </resources>
 </document>
